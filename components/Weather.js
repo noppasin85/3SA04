@@ -4,9 +4,9 @@ import Forecast from './Forecast';
 
 export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
-        main: 'main',
-        description: 'description',
-        temp: 0,
+        main: 'Phuket',
+        description: 'Khatu',
+        temp: 32,
     })
     return (
         <View>
