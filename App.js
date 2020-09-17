@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     borderWidth: 5,
-    borderColor: 'red',
+    borderColor: 'blue',
     backgroundColor: '#fff',
-    alignItems: 'center',
+    //alignItems: 'center',
     justifyContent: 'center',
   },
 })
