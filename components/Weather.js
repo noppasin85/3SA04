@@ -6,14 +6,15 @@ export default function Weather(props) {
     const [forecastInfo, setForecastInfo] = useState({
         main: '-',
         description: '-',
-        temp: 0
+        temp: 30
     })
     return (
         <View>
             <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
-                <Text>Zip Code</Text>
-                <Text>{props.zipCode}</Text>
-                <Forecast {...forecastInfo} />
+                <View style={styles.cover}> 
+                    <Text style={styles.medium}>Zip Code: {props.zipCode}</Text>
+                    <Forecast {...forecastInfo} />
+                </View>    
             </ImageBackground>
         </View>
     );
@@ -25,4 +26,14 @@ const styles = StyleSheet.create({
         height: '100%'
         
     },
+    cover: {
+        backgroundColor: '#111',
+        width: '100%',
+        height: 300,
+        opacity: 0.5,
+    },
+    medium: {
+        fontSize: 20, 
+        color: '#FFF',
+    }
 });
